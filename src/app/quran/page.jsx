@@ -6,7 +6,6 @@ import Loader from "../loading";
 
 function Quran() {
   const { data: surahs, error, isLoading } = useGetSurahsQuery();
-  console.log(surahs);
   if (isLoading) return <Loader />;
   if (error) return <Error />;
   return (
